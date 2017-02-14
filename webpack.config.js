@@ -26,7 +26,7 @@ module.exports = {
     loaders: [{
       test: /.jsx?$/,
       exclude: /node_modules/,
-      loaders: ['react-hot', 'babel-loader?'+JSON.stringify({
+        loaders: ['react-hot-loader/webpack', 'babel-loader?'+JSON.stringify({
         presets: ['es2015', 'react', 'stage-2'],
         plugins: ["transform-decorators-legacy", "transform-class-properties"]
       })],

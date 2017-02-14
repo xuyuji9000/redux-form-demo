@@ -1,9 +1,13 @@
 import { combineReducers } from "redux";
 
-import tweets from "./tweetsReducer";
-import user from "./userReducer";
+import tweetsReducer from "./tweetsReducer";
+import userReducer from "./userReducer";
+import { reducer as formReducer } from "redux-form";
 
-export default combineReducers({
-    tweets,
-    user,
-});
+const reducers = {
+    tweets: tweetsReducer,
+    user: userReducer,
+    form: formReducer
+};
+
+export default combineReducers(reducers);

@@ -1,3 +1,3 @@
-# redux demo
+# redux form demo
 
-This is a redux demo.
+This is a redux form demo.
